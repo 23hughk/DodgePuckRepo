@@ -302,7 +302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 7
-  speed: 10
+  speed: 9
 --- !u!1 &2024150249
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,10 +20,11 @@ public class Testing : MonoBehaviour
         Debug.Log(moveHorizontal);
 
         float moveVertical = Input.GetAxis("Vertical");
-        //if (Input.GetKeyDown(KeyCode.D)) ;
-        //{
-        //    Debug.Log(Input.GetAxis("Horizontal"));
-        //    transform.Translate(Vector2.right * speed * Time.deltaTime);
-        //}
+
+        Vector2 movement = new Vector2(moveHorizontal,moveVertical);
+
+        transform.Translate(movement * speed * Time.deltaTime);
+
+        
     }
 }
