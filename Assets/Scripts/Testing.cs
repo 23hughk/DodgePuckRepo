@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Testing : MonoBehaviour
 {
-    public int score = 7;
-    public int speed = 10;
+    public float speed;
+    public float xrange;
+    public float yrange;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,11 @@ public class Testing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(transform.position.x > xrange)
+        {
+            transform.position = new Vector2(xrange,transform.position.y);
+        }
+        
         float moveHorizontal = Input.GetAxis("Horizontal");
         Debug.Log(moveHorizontal);
 
