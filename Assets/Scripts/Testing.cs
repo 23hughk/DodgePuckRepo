@@ -14,14 +14,34 @@ public class Testing : MonoBehaviour
 
     }
 
+    private void LateUpdate()
+    {
+        if (transform.position.x > xrange)
+        {
+            transform.position = new Vector2(xrange, transform.position.y);
+        
+        }
+
+        if(transform.position.x < -xrange)
+        {
+            transform.position = new Vector2(-xrange, transform.position.y);
+        }
+
+        if (transform.position.x > xrange)
+        {
+            transform.position = new Vector2(transform.position.x, yrange);
+
+        }
+
+        if (transform.position.x > xrange)
+        {
+            transform.position = new Vector2(xrange, transform.position.y);
+        }
+
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.x > xrange)
-        {
-            transform.position = new Vector2(xrange,transform.position.y);
-        }
-        
+      
         float moveHorizontal = Input.GetAxis("Horizontal");
         Debug.Log(moveHorizontal);
 
