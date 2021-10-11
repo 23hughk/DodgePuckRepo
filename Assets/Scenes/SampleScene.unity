@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 1279272917}
   - component: {fileID: 1279272916}
   - component: {fileID: 1279272918}
+  - component: {fileID: 1279272919}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -305,6 +306,20 @@ MonoBehaviour:
   xrange: 10
   yrange: 10
   Puck: {fileID: 3767552640803194928, guid: ce84ac077bb92964ab9cbc93c91aafc6, type: 3}
+--- !u!114 &1279272919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279272915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f5817bde82f257449252ff26dba1551, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LottoNumber: 010000000200000003000000040000000500000006000000
+  myNumber: 0
 --- !u!1 &2024150249
 GameObject:
   m_ObjectHideFlags: 0

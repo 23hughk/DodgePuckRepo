@@ -40,7 +40,7 @@ public class Testing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            Instantiate(Puck, new Vector2(2,3), Quaternion.identity);
+        Instantiate(Puck, new Vector2(Random.Range(-xrange, xrange), Random.Range(-yrange, yrange)), Quaternion.identity);
 
 
 
